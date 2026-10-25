@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="uml" name="Page-1">
+    <mxGraphModel dx="822" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Admin" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Admin" vertex="1">
+          <mxGeometry height="90" width="350" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin_attrs" parent="Admin" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="14" width="350" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin_line" parent="Admin" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="2" width="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin_methods" parent="Admin" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="+ manageNotes(notebook: NoteBook): void" vertex="1">
+          <mxGeometry height="48" width="350" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="User" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#ffffff;strokeColor=#000000;" value="User" vertex="1">
+          <mxGeometry height="242" width="300" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="User_attrs" parent="User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="+ id: number&lt;br&gt;+ name: string&lt;br&gt;+ email: string&lt;br&gt;- password: string&lt;br&gt;# phone: string&lt;br&gt;- _age: number&lt;br&gt;- notebooks: NoteBook[]&lt;br&gt;+ age: number (get / set)" vertex="1">
+          <mxGeometry height="152" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="User_line" parent="User" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="2" width="300" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="User_methods" parent="User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="+ displayInfo(): void&lt;br&gt;+ addNotebook(notebook: NoteBook): void&lt;br&gt;+ getNotebooks(): NoteBook[]" vertex="1">
+          <mxGeometry height="62" width="300" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="NoteBook" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#ffffff;strokeColor=#000000;" value="NoteBook" vertex="1">
+          <mxGeometry height="134" width="320" x="480" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="NoteBook_attrs" parent="NoteBook" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="- notes: Note[]" vertex="1">
+          <mxGeometry height="26" width="320" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NoteBook_line" parent="NoteBook" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="2" width="320" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="NoteBook_methods" parent="NoteBook" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="+ addNote(note: Note): void&lt;br&gt;+ removeNote(id: number): void&lt;br&gt;+ getNotes(): Note[]&lt;br&gt;+ count(): number" vertex="1">
+          <mxGeometry height="80" width="320" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Note" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Note" vertex="1">
+          <mxGeometry height="152" width="320" x="480" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Note_attrs" parent="Note" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="+ id: number&lt;br&gt;+ title: string&lt;br&gt;+ content: string&lt;br&gt;+ author: User&lt;br&gt;+ userId: number (get)" vertex="1">
+          <mxGeometry height="98" width="320" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Note_line" parent="Note" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="2" width="320" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="Note_methods" parent="Note" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="+ preview(length: number = 40): string" vertex="1">
+          <mxGeometry height="26" width="320" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="Storage" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Storage&lt;T&gt;" vertex="1">
+          <mxGeometry height="116" width="260" x="900" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Storage_attrs" parent="Storage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="- items: T[]" vertex="1">
+          <mxGeometry height="26" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Storage_line" parent="Storage" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="2" width="260" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Storage_methods" parent="Storage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;html=1;whiteSpace=wrap;" value="+ addItem(item: T): void&lt;br&gt;+ removeItem(item: T): void&lt;br&gt;+ getAllItems(): T[]" vertex="1">
+          <mxGeometry height="62" width="260" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="e_inherit" edge="1" parent="1" source="Admin" style="endArrow=block;endSize=14;endFill=0;html=1;strokeColor=#000000;" target="User" value="Inheritance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_aggr" edge="1" parent="1" source="User" style="startArrow=diamondThin;startSize=16;startFill=0;endArrow=none;html=1;strokeColor=#000000;" target="NoteBook" value="owns (Aggregation)  1 .. *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_comp" edge="1" parent="1" source="NoteBook" style="startArrow=diamondThin;startSize=16;startFill=1;endArrow=none;html=1;strokeColor=#000000;" target="Note" value="contains (Composition)  1 .. *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_assoc" edge="1" parent="1" source="Note" style="endArrow=open;endSize=12;exitX=0;exitY=0.5;entryX=0.5;entryY=1;html=1;strokeColor=#000000;" target="User" value="author (Association)  * .. 1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
