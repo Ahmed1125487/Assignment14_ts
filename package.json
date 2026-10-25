@@ -1,0 +1,23 @@
+{
+  "name": "assignment14_solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start:dev": "concurrently \"tsc --watch\" \"node --watch dist/main.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed1125487/Assignment14_ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmed1125487/Assignment14_ts/issues"
+  },
+  "homepage": "https://github.com/Ahmed1125487/Assignment14_ts#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
